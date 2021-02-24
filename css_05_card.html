@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <he4d>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: "Roboto", sans-serif;
+      }
+      .wrap {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background:linear-gradient(-30deg,#fdaecb,#e7597f,#fe8556) fixed center center /100% 100%;
+      }
+      .container {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content:center
+      }
+      .item {
+        width: 370px;
+        margin: 15px;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+        transition: ease-in-out .5s;
+      }
+      .item:hover{
+        box-shadow: 0 10px 20px rgba(160, 10, 10, 0.5);
+      }
+      .item .pic{
+          width: 50%;
+      }
+      .item .pic img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      } 
+      .item .txt{
+          width: 50%;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          background-color:white;
+      }
+      .item .txt h2{
+          margin-bottom: .4em;
+          font-weight: 700;
+      }
+      .item .txt p{
+          font-weight: 100;
+            line-height: 1.2em;
+      }
+      .item .txt .btn{
+          line-height: 1.5em;
+          border: 1px solid #ccc;
+          padding: 0 1em;
+          align-self: flex-end;
+          text-decoration: none;
+          border-radius: 200px;
+          margin-top: auto;
+          color: #aaa;
+          cursor: pointer;
+          transition: ease-in .3s;
+      }
+      .item .txt .btn:hover{
+          background-color: #ccc;
+          color: white;
+      }
+    </style>
+  </he4d>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?random=1" alt="" />
+          </div>
+          <div class="txt">
+            <h2>Lorem ipsum dolor</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Corporis, dolores debitis! Dolorum, debitis.
+            </p>
+            <a href="" class="btn">more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?random=10" alt="" />
+          </div>
+          <div class="txt">
+            <h2>Lorem ipsum dolor</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              perspiciatis nulla totam.
+            </p>
+            <a href="" class="btn">more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?random=15" alt="" />
+          </div>
+          <div class="txt">
+            <h2>Lorem ipsum dolor</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+              aliquid deleniti neque asperiores, repellat molestiae?
+            </p>
+            <a href="" class="btn">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="https://picsum.photos/600/350?random=15" alt=""> -->
+  </body>
+</html>
