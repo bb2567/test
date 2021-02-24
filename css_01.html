@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖文滿版</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .banner{
+            width: 100%; 
+            height: 70vh;
+            background-color: #ccc;
+            background:
+                linear-gradient(115deg, #7bf 50%, 
+                transparent 50%)center center / 100% 100%,
+                url(https://images.unsplash.com/photo-1470004914212-05527e49370b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1226&q=80)
+                right center/ auto 100%;
+        }
+        .container{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        .banner-txt{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 0 0 40px;
+        }
+        .banner-txt h1{
+            font-size: 80px;
+            border-bottom: 1px solid #fff;
+            color: white;
+        }
+        .banner-txt h1 small{
+            font-size: 70px;
+            display: block;
+        }
+        .banner-txt h2{
+            font-size: 30px;
+            color: white;
+        }
+        .banner-txt p{
+            font-size: 18px;
+            color:white;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-txt">
+                <h1>走進你所未見的臺北
+                    <small>臺北，是什麼模樣？</small>
+                </h1>
+                <h2>
+                    臺北，是什麼模樣？
+                </h2>
+                <p>走進百年街坊相遇新興文創、踏上郊山親近自然芬芳、
+                    <br>
+                    拜訪商圈體會潮流與藝術的奔放； 旅遊臺北，隨捷運由陽光燦爛，駛進夜裡的霓虹光亮， 在臺北的日子總能令你意猶未盡！
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

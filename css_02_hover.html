@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+      }
+      .item {
+        width: 25%;
+        position: relative;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .item .txt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition:ease-in-out .5s;
+      }
+      .item:hover .txt{
+          opacity: 1;
+      }
+      .item .txt h2 {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Stick', sans-serif;
+
+      }
+   
+      .item .txt h2:after{
+          content: '';
+          display: block;
+          width: 0%;
+          height: 2px;
+          margin: 10px 0;
+          background-color: red;
+          transition: width .5s .5s;
+      }
+
+      .item:hover .txt h2:after{
+          width: 100%;
+      }
+
+
+      .item .txt p {
+        font-size: 20px;
+        color: #ff0;
+        border: 1px solid #ff0;
+        padding: 5px;
+        text-align: center;
+        letter-spacing: 5px;
+        transition: .5s;
+      }
+      .txt p:hover{
+          background-color: #ff0;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=5" alt="" />
+        <div class="txt">
+          <h2>台北夜市美食</h2>
+          <p>夜市生活</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=10" alt="" />
+        <div class="txt">
+          <h2>台北夜市美食</h2>
+          <p>夜市生活</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=15" alt="" />
+        <div class="txt">
+          <h2>台北夜市美食</h2>
+          <p>夜市生活</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/500/400?random=20" alt="" />
+        <div class="txt">
+          <h2>台北夜市美食</h2>
+          <p>夜市生活</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
