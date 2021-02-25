@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: "Roboto", sans-serif;
+      }
+      .main-footer {
+        padding: 150px 0 0;
+        /* background:linear-gradient(-20deg,#ccc,#cc0);
+ */
+        background-color: rgb(102, 171, 211);
+      }
+      .main-footer .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+      }
+      .footer-item {
+        width: 0;
+        flex-grow: 1;
+        margin: 0 20px;
+      }
+      .footer-item h4 {
+        font-weight: 400;
+        color: white;
+        font-size: 24px;
+        border-bottom: 1px solid white;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+      }
+      .footer-item nav {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-item nav a {
+        color: white;
+        line-height: 1.4em;
+        padding: 5px 0;
+        text-decoration: none;
+      }
+      .footer-item nav a:hover{
+          color: tomato;
+      }
+      .conpyright {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 150px 0;
+        color: white;
+        background: rgb(47, 107, 163);
+      }
+      i {
+        margin-right: 0.5em;
+      }
+      .footer-subs{
+          display: flex;
+          flex-direction: column;
+      }
+
+      .footer-subs form {
+        display: flex;
+        width: 100%;
+        margin: auto 0;
+      }
+
+      .footer-subs input[type="text"],
+      .footer-subs input[type="submit"] {
+        border: none;
+        padding: 5px 10px;
+      }
+      .footer-subs input[type="text"]{
+          width: 0;
+          flex-grow: 1;
+      }
+      .footer-subs input[type="submit"]{
+          color: white;
+          background-color: rgb(28, 85, 158);
+      }
+
+      .main{
+          height: 100vh;
+      }
+
+    </style>
+  </head>
+  <body>
+      <h1 id="1">Hello</h1>
+      <div class="main"></div>
+      <div class="main" id="2">JavaSCRIPT</div>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-item">
+          <h4>購買</h4>
+          <nav>
+            <a href=""><i class="fas fa-angle-right"></i>所有商品分類</a>
+            <a href=""><i class="fas fa-angle-right"></i>找靈感</a>
+            <a href=""><i class="fas fa-angle-right"></i>設計誌</a>
+            <a href=""><i class="fas fa-angle-right"></i>品品學堂</a>
+            <a href=""><i class="fas fa-angle-right"></i>禮物卡</a>
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>販售</h4>
+          <nav>
+            <a href=""><i class="fas fa-angle-right"></i>我要開設計館</a>
+            <a href=""><i class="fas fa-angle-right"></i>設計館問與答</a>
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>幫助 / 政策</h4>
+          <nav>
+            <a href=""><i class="fas fa-angle-right"></i>問與答</a>
+            <a href=""><i class="fas fa-angle-right"></i>大宗採購</a>
+            <a href=""><i class="fas fa-angle-right"></i>訊息公告</a>
+            <a href=""><i class="fas fa-angle-right"></i>服務條款</a>
+            <a href=""><i class="fas fa-angle-right"></i>退貨政策</a>
+          </nav>
+        </div>
+
+        <div class="footer-item">
+          <h4>追蹤 Panda</h4>
+          <nav>
+            <a href="#1"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#2"><i class="fab fa-line"></i>LINE</a>
+            <a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href=""><i class="fab fa-youtube"></i>Youtube</a>
+          </nav>
+        </div>
+        <div class="footer-item footer-subs">
+          <h4>訂閱電子報</h4>
+          <form>
+            <input type="text" />
+            <input type="submit" value="訂閱" />
+          </form>
+        </div>
+      </div>
+      <div class="conpyright">&copy; 2021 Panda. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>

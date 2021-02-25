@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .flex{
+        width: 800px;
+        height: 800px;
+        background: #ccc;
+        display: flex;
+        /* 主軸 */
+        /* justify-content: center; */
+        /* 次軸 */
+        /* align-items: center; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+
+      }
+      .item{
+        width: 700px;
+        /* height: 200px; */
+        background-color: #f00;
+        font-size: 100px;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        margin: 20px;
+      }
+      .cc{
+        display: flex;
+        flex-direction: column;
+      }
+      .btn{
+        margin: auto;
+      }
+      .flex::before{
+        content: '';
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        border-top: 400px solid transparent;
+        border-right: 400px solid rgba(255, 255, 255, 0.37);
+        border-left: 400px solid white;
+        transform: translateY(100%);
+        /* border-bottom: 50px solid #aaa; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="item">1</div>
+      <div class="item cc"><h2>Hello</h2>
+        <a href="" class="btn">more</a>
+      </div>
+    </div>
+  </body>
+</html>
