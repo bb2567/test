@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .main-header {
+        background-color: #ccc;
+      }
+      .main-header .container {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .main-header .logo {
+        width: 100px;
+      }
+      .main-header .logo img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .main-header .main-nav {
+        display: flex;
+        margin: auto;
+      }
+      .main-header .main-nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0px);
+        transition: 0.3s;
+      }
+      .main-header .main-nav a:hover {
+        transform: translateY(-5px);
+      }
+      .main-header .main-nav a:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        height: 0;
+        border-bottom: 1px solid rgb(172, 20, 20);
+        transition: 0.3s;
+      }
+      .main-header .main-nav a:hover:after {
+        left: 0;
+        right: 0;
+      }
+
+      .header-search {
+        display: flex;
+      }
+
+      .main-header .header-search input,
+      button {
+        border: none;
+        background: white;
+        padding: 5px 10px;
+      }
+
+      .header-search button {
+        border-radius: 0 200px 200px 0;
+      }
+      .header-search input {
+        border-radius: 200px 0 0 200px;
+      }
+      .header-search input,
+      .header-search button:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="/images/logo192.png" alt="logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="">home</a>
+          <a href="">products</a>
+          <a href="">news</a>
+          <a href="">about</a>
+        </nav>
+        <form class="header-search">
+          <input type="search" />
+          <button><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
